@@ -6,7 +6,7 @@ services:
     build:
       context: ./web
     ports:
-      - 80:6000 # host : container
+      - 2375:6000 # host : container -- IMPORTANT FOR THE DIGITALOCEAN DOCKER DROPLET!
     env_file:
       ./credentials.env
     volumes:
