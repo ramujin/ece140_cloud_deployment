@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Page Info -->
+    <title>Agile Demo</title>
+    <meta name="author" content="Ramsin Khoshabeh">
+    <meta name="description" content="A Place to Call Home">
+
+    <link rel="stylesheet" type="text/css" href="css/agile.css">
+  </head>
+
+  <body>
+
+    <div class='hero'>
+      <h1> Agile CSS Micro-Framework </h1>
+      <p> Experimental design for ECE140b </p>
+    </div>
+
+    <section class='padding-responsive'>
+
+      <div class='separator'>Database Records</div>
+
+      <table class='margin-top-xl'>
+        <thead>
+          <tr>
+            <th class='small'> First Name </th>
+            <th class='medium'> Last Name </th>
+            <th class='large'> Email </th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for user in users %}
+          <tr>
+            <td> {{user[0]}} </td>
+            <td> {{user[1]}} </td>
+            <td> {{user[2]}} </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+
+      <div class='separator'>Typography</div>
+
+      <h1 class='bordered'> H1 Element </h1>
+      <h2 class=''> H2 Element </h2>
+      <h3 class=''> H3 Element </h3>
+      <h4 class=''> H4 Element </h4>
+      <h5 class=''> H5 Element </h5>
+      <h6 class=''> H6 Element </h6>
+
+      <hr>
+
+      <p> I am a paragraph </p>
+
+      <ul>
+        <li> This is a list </li>
+        <li> And so is this </li>
+      </ul>
+
+      <ol>
+        <li> This is an ordered list-item </li>
+        <li> Don't forget about me!</li>
+      </ol>
+
+      <div class='separator'>
+        Responsive (2-column) Grid
+      </div>
+
+      <section class='responsive_grid'>
+        <div class='card bordered margin-none'> I'm a card! </div>
+        <div class='card bordered margin-none'> And so am I! </div>
+      </section>
+
+      <div class='separator'>Tables</div>
+
+      <table class='margin-top-xl'>
+        <thead>
+          <tr>
+            <th class='small'> column </th>
+            <th class='medium'> column </th>
+            <th class='large'> column </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td> column </td>
+            <td> column </td>
+            <td> column </td>
+          </tr>
+          <tr>
+            <td> column </td>
+            <td> column </td>
+            <td> column </td>
+          </tr>
+          <tr>
+            <td> column </td>
+            <td> column </td>
+            <td> column </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class='separator'>Forms</div>
+
+      <div class='btn small '> Small Button </div>
+      <div class='btn small outline'> Small Button </div>
+      <div class='btn small pill'> Small Button </div>
+      <div class='btn small' disabled> Small Button </div> <BR><BR>
+
+      <div class='btn medium'> Medium Button </div>
+      <div class='btn medium outline'> Medium Button </div>
+      <div class='btn medium pill'> Medium Button </div>
+      <div class='btn medium' disabled> Medium Button </div> <BR><BR>
+
+      <form>
+
+        <section class='responsive_grid'>
+
+          <div class='field'>
+            <label> Enter your first name: &nbsp;</label>
+            <input type='text' name='name' value='' class='margin-top-lg'>
+          </div>
+
+          <div class='field select '>
+            <label> Choose a color: &nbsp;</label>
+            <div class="select margin-top-lg">
+              <select>
+                <option>First select</option>
+                <option>Red</option>
+                <option>Green</option>
+                <option>Blue</option>
+              </select>
+              <div class="select__arrow"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class='responsive_grid'>
+          <div class="field">
+            <label> Choose an Item </label>
+            <label class="margin-top-lg control control--checkbox">First checkbox
+              <input type="checkbox" checked="checked" />
+              <div class="control__indicator"></div>
+            </label>
+            <label class="control control--checkbox">Second checkbox
+              <input type="checkbox" />
+              <div class="control__indicator"></div>
+            </label>
+          </div>
+
+          <div class="field">
+            <label> Choose an Item </label>
+            <label class="margin-top-lg control control--radio">First radio
+              <input type="radio" name="radio" checked="checked" />
+              <div class="control__indicator"></div>
+            </label>
+            <label class="control control--radio">Second radio
+              <input type="radio" name="radio" />
+              <div class="control__indicator"></div>
+            </label>
+          </div>
+        </section>
+
+      </form>
+
+    </section>
+
+  </body>
+</html>

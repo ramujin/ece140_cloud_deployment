@@ -1,0 +1,3 @@
+pyramid==1.10
+pyramid-jinja2
+mysql-connector-python
