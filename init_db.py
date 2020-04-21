@@ -9,7 +9,7 @@ load_dotenv('credentials.env')
 db_user = os.environ['MYSQL_USER']
 db_pass = os.environ['MYSQL_PASSWORD']
 db_name = os.environ['MYSQL_DATABASE']
-db_host = 'localhost' # localhost because running this outside of Docker
+db_host = os.environ['MYSQL_HOST'] # must 'localhost' when running this script outside of Docker
 
 # Connect to the database
 db = mysql.connect(user=db_user, password=db_pass, host=db_host, database=db_name)
