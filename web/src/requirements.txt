@@ -2,4 +2,5 @@ pyramid==1.10
 pyramid-jinja2
 mysql-connector-python
 python-dotenv
-bjoern
+bjoern   # to use the bjoern webserver
+waitress # to use the waitress webserver

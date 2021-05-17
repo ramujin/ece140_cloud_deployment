@@ -12,3 +12,7 @@ WORKDIR /app
 
 EXPOSE 6000
 CMD python server.py
+
+# Uncomment if you wish to use bjoern or waitress web servers
+# CMD python server_bjoern.py
+# CMD python server_waitress.py
