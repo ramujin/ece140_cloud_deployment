@@ -3,7 +3,7 @@ from pyramid.renderers import render_to_response
 
 import mysql.connector as mysql
 import os
-import waitress
+from waitress import serve
 
 db_user = os.environ['MYSQL_USER']
 db_pass = os.environ['MYSQL_PASSWORD']
@@ -33,6 +33,4 @@ if __name__ == '__main__':
   config.add_static_view(name='/', path='./public', cache_max_age=3600)
 
   app = config.make_wsgi_app()
-  # server = make_server('0.0.0.0', 6000, app)
-  # server.serve_forever()
-  serve.serve(app, host="0.0.0.0", port=6000)
+  serve(app, host="0.0.0.0", port=6000)
